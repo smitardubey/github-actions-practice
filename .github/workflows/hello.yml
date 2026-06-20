@@ -1,0 +1,23 @@
+#Workflow
+#Workflow has name
+ name: Hello
+
+ #On tells when the workflow runs 
+ on:
+   workflow_dispatch: 
+#Jobs tell what the workflow should be. There can be one or more jobs
+#Should be inside the workflow
+ jobs: 
+ #1st job give indentation
+  say-hello:
+    #Creates the Ephemiral Server Ubuntu 
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Say hello to everyone 
+        run: echo "Hello Everyone" 
+#Steps
+#Should be inside the jobs
+
+#Actions
+#Should be inside the Steps
